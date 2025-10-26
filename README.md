@@ -2,7 +2,9 @@
 
 A responsive and feature-rich **Flipkart Clone** built using **HTML**, **CSS**, and **JavaScript**.  
 This project simulates an online shopping platform with a category-based product display, sliding banner, cart functionality, and dynamic product filtering — all without any backend framework.
+-----
 
+👉 **[🔗 Live Demo](https://ganeshsivajimaniganti.github.io/FlipkartClone/)**  
 ---
 
 ## 🚀 Features

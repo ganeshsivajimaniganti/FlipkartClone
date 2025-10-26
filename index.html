@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flipkart Clone</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- ---------------- NAVBAR ---------------- -->
+  <nav class="navbar">
+    <div class="logo">Flipkart</div>
+
+    <input type="text" class="search-bar" placeholder="Search for products" />
+
+    <div class="menu-group">
+      <div class="dropdown">
+        <button class="dropbtn">Login ▼</button>
+        <div class="dropdown-content">
+          <a href="./pages/signup.html">Signup</a>
+          <a href="profile.html">Profile</a>
+          <a href="#">Rewards</a>
+        </div>
+      </div>
+
+      <div class="cart">
+        <a href="./pages/cart.html" style="color: inherit; text-decoration: none;">
+          <span>🛒</span> Cart
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ---------------- CATEGORY BAR ---------------- -->
+  <div class="category-bar">
+    <ul class="category-list">
+      <li><a href="#" data-category="All" class="category-link active">Home</a></li>
+      <li><a href="#" data-category="Electronics" class="category-link">Electronics</a></li> 
+      <li><a href="#" data-category="Phones" class="category-link">Phones</a></li> 
+      <li><a href="#" data-category="Home Furniture" class="category-link">Home Furniture</a></li> 
+      <li><a href="#" data-category="Dress" class="category-link">Dress</a></li> 
+      <li><a href="#" data-category="Shoes" class="category-link">Shoes</a></li> 
+      <li><a href="#" data-category="Watches" class="category-link">Watches</a></li>
+      <li><a href="#" data-category="Laptops" class="category-link">Laptops</a></li>
+      <li><a href="#" data-category="Bagpacks" class="category-link">Bagpacks</a></li> 
+      <li><a href="#" data-category="AirCoolers" class="category-link">AirCoolers</a></li> 
+      <li><a href="#" data-category="Refridgerators" class="category-link">Refridgerators</a></li>
+      <li><a href="#" data-category="Toys" class="category-link">Toys</a></li> 
+      <li><a href="#" data-category="Personal Care" class="category-link">Personal Care</a></li> 
+      <li><a href="#" data-category="Gifts" class="category-link">Gifts</a></li>
+    </ul>
+  </div>
+
+  <!-- ---------------- SLIDING BANNER ---------------- -->
+  <div class="sliding-banner">
+    <div class="slides">
+      <img src="./assets/Images/HeroBanner1.jpg" class="banner-img active" alt="Banner 1" />
+      <img src="./assets/Images/HeroBanner2.jpg" class="banner-img" alt="Banner 2" />
+      <img src="./assets/Images/HeroBanner3.jpg" class="banner-img" alt="Banner 3" />
+    </div>
+  </div>
+
+  <!-- ---------------- PRODUCT SECTION ---------------- -->
+  <div id="product-list"></div>
+
+  <!-- ---------------- FOOTER ---------------- -->
+  <footer>
+    <div class="flipkart-info">
+      <h2>About Flipkart</h2>
+      <p>
+        Flipkart is India’s leading e-commerce marketplace, offering millions of products across diverse categories such as electronics, fashion, home essentials, and more. Established with a mission to make online shopping simple and accessible, Flipkart has become a trusted name among Indian consumers.
+      </p>
+      <p>
+        With operational branches and warehouses in major cities including Bengaluru, Mumbai, Hyderabad, and Delhi, Flipkart ensures fast and reliable delivery across the nation. Whether it’s mobile phones, laptops, fashion wear, or furniture, every category is backed by customer satisfaction and quality assurance.
+      </p>
+      <p>
+        Constantly innovating through technology and logistics, Flipkart continues to redefine the shopping experience for millions of Indians. It’s not just an online store—it’s a digital revolution that connects aspirations with convenience.
+      </p>
+    </div>
+    <p class="copyright">© 2025 Flipkart Clone | Designed by <b>Ganesh Sivaji Maniganti</b></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

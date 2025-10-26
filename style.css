@@ -1,0 +1,219 @@
+/* ---------------- BASIC RESET ---------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #f1f3f6;
+}
+
+/* ---------------- NAVBAR ---------------- */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #2874f0;
+  padding: 10px 20px;
+  color: white;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.search-bar {
+  flex: 1;
+  margin: 8px 15px;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+}
+
+.menu-group {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* ---------------- DROPDOWN ---------------- */
+.dropdown {
+  position: relative;
+}
+.dropbtn {
+  background: white;
+  color: #2874f0;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: white;
+  min-width: 160px;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: #333;
+  padding: 10px 14px;
+  display: block;
+  text-decoration: none;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* ---------------- CART ---------------- */
+.cart a {
+  background: #ff9f00;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+/* ---------------- CATEGORY BAR ---------------- */
+.category-bar {
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: thin;
+  scrollbar-color: #2874f0 #f1f1f1;
+}
+.category-list {
+  display: inline-flex;
+  list-style: none;
+  padding: 12px 20px;
+  gap: 20px;
+}
+.category-link {
+  color: #2874f0;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 14px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+.category-link:hover {
+  background-color: #e3f2fd;
+}
+.category-link.active {
+  background-color: #2874f0;
+  color: #fff;
+}
+
+/* ---------------- BANNER ---------------- */
+.sliding-banner {
+  width: 100%;
+  overflow: hidden;
+}
+.banner-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: none;
+}
+.banner-img.active {
+  display: block;
+}
+
+/* ---------------- PRODUCTS ---------------- */
+.category-section {
+  margin: 40px 0;
+  padding: 0 40px;
+}
+.category-title {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  color: #333;
+  border-left: 4px solid #2874f0;
+  padding-left: 10px;
+}
+
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  background-color: white;
+  border-radius: 8px;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+.product-card:hover {
+  transform: translateY(-3px);
+}
+.product-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+}
+.product-name {
+  font-weight: 600;
+  color: #333;
+  margin-top: 8px;
+}
+.product-price {
+  color: #2874f0;
+  font-weight: bold;
+  margin: 6px 0;
+}
+.add-to-cart {
+  background-color: #ff9f00;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.add-to-cart:hover {
+  background-color: #fb641b;
+}
+
+/* ---------------- FOOTER ---------------- */
+footer {
+  background-color: #172337;
+  color: #ccc;
+  padding: 40px 20px;
+  text-align: center;
+}
+.flipkart-info {
+  max-width: 1000px;
+  margin: auto;
+}
+.flipkart-info h2 {
+  color: #fff;
+  margin-bottom: 15px;
+}
+.flipkart-info p {
+  line-height: 1.6;
+  margin-bottom: 10px;
+  text-align: justify;
+}
+.copyright {
+  margin-top: 20px;
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+@media (max-width: 768px) {
+  .banner-img { height: 220px; }
+  .category-section { padding: 0 20px; }
+  .product-container { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); }
+  .flipkart-info p { font-size: 0.95rem; }
+}

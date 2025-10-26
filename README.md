@@ -103,12 +103,18 @@ This simulates real-world e-commerce functionality where the cart retains items 
 _All Rights Reserved._
 
 ---
+## 👨‍💻 Author
 
-## 💙 Author
-
-👨‍💻 **Ganesh Sivaji Maniganti**  
+**Ganesh Sivaji Maniganti**  
+🎓 B.Tech CSE | Aspiring Full Stack Java Developer  
 📧 **[ganeshsivajimaniganti@gmail.com](mailto:ganeshsivajimaniganti@gmail.com)**  
 🌐 **[GitHub Profile](https://github.com/ganeshsivajimaniganti)**
+📫 _Feel free to connect for collaboration or feedback!_
+
+---
+
+⭐ *If you like this project, don’t forget to give it a star on GitHub!* ⭐
+
 
 ---
 
